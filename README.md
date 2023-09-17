@@ -11,7 +11,7 @@
    sudo modprobe uinput
    ```
 3. Run `sudo evtest` (you may need to install a package for your distribution) on your system and find the device that corresponds to your keyboard, ie. /dev/input/eventX. It is likely that two or more devices show up that are called keyboards. In that case, individually check which event number corresponds to your keyboard through the `evtest` program. The correct one will produce output on screen whenever a key is pressed.
-4. Replace "/dev/input/event5" in ./src/module1.c with your device event number /dev/input/eventX.
+4. Replace "/dev/input/event5" in src/module1.c with your device event number /dev/input/eventX.
 5. Compile the program.
    ```
    gcc -levdev -lX11 -Iinclude/ -I/usr/include/libevdev-1.0/ src/anti_keylogger.c src/module1.c src/module2.c src/queue.c -o bin/anti_keylogger
