@@ -20,3 +20,4 @@
    ```
    sudo ./bin/anti-keylogger
    ```
+   To see the background processes taking place, uncomment printf statements in src/module1.c and src/module2.c.
