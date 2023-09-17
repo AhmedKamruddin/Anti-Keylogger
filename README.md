@@ -20,4 +20,6 @@
    ```
    sudo ./bin/anti-keylogger
    ```
-   To see the background working of the program, uncomment printf statements in src/module1.c and src/module2.c.
+8. (Optional)
+   - To see the background working of the program, uncomment printf statements in src/module1.c and src/module2.c.
+   - The program runs for 14 keystrokes. To increase the number of keystrokes for which the program runs, change the value in the while loop conditions in src/module1.c and src/module2.c. Both the values should be equal.
