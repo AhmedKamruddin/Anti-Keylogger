@@ -28,12 +28,16 @@ int encrypt(int urandom_fd, unsigned short code, signed int value)
     unsigned char buffer;
     unsigned short key, encrypted_keycode;
     
-
+    /*
+    * If encrypted_keycode is 0(KEY_RESERVED) or 58(KEY_CAPSLOCK), it creates
+    * problems. In that case, repeat steps from the point of reading /dev/urandom.
+    */
     do {
         read(urandom_fd, &buffer, sizeof(buffer));
         key = buffer >> 2;
         encrypted_keycode = code ^ key;
     } while (encrypted_keycode == 0 || encrypted_keycode == 58);
+    
     enqueue(key_queue, key);
     // printf("Key written after encryption: %d\n", key);    
 

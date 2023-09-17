@@ -21,6 +21,11 @@ void xorg_grab_device(Display *display, Window root, Window focused_window)
     XGrabKeyboard(display, root, True, GrabModeAsync, GrabModeAsync, CurrentTime);
 }
 
+/*
+* Keycode values in Xorg are always greater than keycode values defined by 
+* linux kernel by a value of 8. Hence, the arithmetic operations with 8 to 
+* account for the difference. 
+*/
 unsigned short decrypt(Display *display, KeySym key_sym)
 {
     unsigned short encrypted_keycode, decrypted_keycode;
