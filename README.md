@@ -1,6 +1,6 @@
 # Anti-Keylogger
 
-## Important - Do not use this
+## Important - Do not use this project
 This is project probably does not implement cryptography correctly as I created this project just to see if I could and haven't tested its security.
 
 ## Developed on
