@@ -1,4 +1,8 @@
 # Anti-Keylogger
+
+## Important - Do not use this
+This is project probably does not implement cryptography correctly as I created this project just to see if I could and haven't tested its security.
+
 ## Developed on
 - Arch Linux, kernel version: Linux 6.4.12-arch1-2-g14 x86_64
 - X Window System, version number: 11.0, X.org version: 21.1.8
