@@ -1,7 +1,7 @@
 # Anti-Keylogger
 
 ## Important - Do not use this project
-This is project probably does not implement cryptography correctly as I created this project just to see if I could and haven't tested its security.
+This is program probably does not implement cryptography correctly as this was developed just to see if I could and I haven't tested its security.
 
 ## Developed on
 - Arch Linux, kernel version: Linux 6.4.12-arch1-2-g14 x86_64
